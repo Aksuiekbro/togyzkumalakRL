@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "togyzkumalak-alphazero"
+version = "0.1.0"
+description = "AlphaZero pipeline for Togyz Kumalak"
+requires-python = ">=3.9"
+dependencies = [
+  "torch",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+pythonpath = ["."]
+testpaths = ["tests"]
+
+
