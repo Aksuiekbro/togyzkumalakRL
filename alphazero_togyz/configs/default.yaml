@@ -1,0 +1,25 @@
+model:
+  in_channels: 8
+  channels: 128
+  num_blocks: 8
+mcts:
+  c_puct: 1.5
+  dirichlet_alpha: 0.3
+  dirichlet_eps: 0.25
+  simulations: 160
+selfplay:
+  temperature_moves: 10
+  num_games_per_iter: 256
+training:
+  buffer_size: 1000000
+  batch_size: 512
+  lr: 0.001
+  weight_decay: 0.0001
+arena:
+  num_games: 200
+  gate_win_rate: 0.55
+  confidence: 0.95
+paths:
+  work_dir: /Users/daurenzhunussov/togyzkumalak/alphazero_togyz
+  checkpoints: /Users/daurenzhunussov/togyzkumalak/alphazero_togyz/checkpoints
+  artifacts: /Users/daurenzhunussov/togyzkumalak/alphazero_togyz/artifacts
